@@ -1,0 +1,12 @@
+Report Generated:
+
+Total Cost by Account:
+Account: 46002255, Total Cost: 5
+Account: 46001122, Total Cost: 5
+
+Total Cost by Call Type:
+Call Type: 1, Total Cost: 5
+Call Type: 7, Total Cost: 5
+
+Total Cost by Day:
+Day: 20201001, Total Cost: 10

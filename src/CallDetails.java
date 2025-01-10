@@ -9,13 +9,15 @@ public class CallDetails {
     private int callCost;
 
     public CallDetails(String line) {
-        this.accountNumber = line.substring(0, 10).trim();
-        this.aNumber = line.substring(10, 25).trim();
-        this.bNumber = line.substring(25, 40).trim();
-        this.startTime = line.substring(40, 54).trim();
-        this.endTime = line.substring(54, 68).trim();
-        this.callType = line.charAt(68);
-        this.callCost = Integer.parseInt(line.substring(69).trim());
+        String[] strings = line.split(" ");
+
+        this.accountNumber = strings[0];
+        this.aNumber = strings[1];
+        this.bNumber = strings[2];
+        this.startTime = strings[3].substring(0, 14);
+        this.endTime = strings[3].substring(15, 28);
+        this.callType = strings[3].charAt(29);
+        this.callCost = Integer.parseInt(strings[3].substring(30));
     }
 
     public String getAccountNumber() {
